@@ -1,0 +1,8 @@
+.header {
+    width: 100%;
+    background-color: var(--title-color-header);
+    font-family: var(--body-font);
+    font-size: var(--header-font-size);
+    text-align: center;
+    padding: 2rem 2rem;
+}

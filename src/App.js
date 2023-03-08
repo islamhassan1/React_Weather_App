@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/header/header";
+import CurrentWeather from "./components/current-weather/current-weather";
+import Forecast from "./components/forecast/forecast";
+import Dropdown from "./components/dropdown/dropdown";
+import "./App.css";
 
 function App() {
+  const handerOnSearchChange = (event) => {
+    console.log(event);
+  }
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+      <Dropdown onSearchChange={handerOnSearchChange}/>
+      <CurrentWeather />
+      <Forecast />
     </div>
   );
 }
