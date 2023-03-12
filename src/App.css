@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
   /*========== Colors ==========*/
   --title-color-header: #fff;
   --body-color-background: #f8f9fa;
@@ -20,20 +19,147 @@
     --date-font-size: 15pt;
     --time-font-size: 13pt;
     --temperature-font-size: 26pt;
+    --data-font-size: 10pt;
   }
 
   /*=============== BASE ===============*/
 * {
   margin: 0 ;
   padding: 0;
- 
+  
 }
 
 html {
   background-color: var(--body-color-background);
-}
-
-body
- {
   
 }
+
+  /*=============== WEATHER ===============*/
+.weather {
+  width: 45rem;
+  border-radius: .5rem;
+  background-color: var(--title-color-header);
+  margin: auto;
+  padding: 0 20px 20px 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather_icon {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.weather-icon {
+  width: 40px;
+}
+
+.temperature {
+  font-weight: 330;
+  font-size: var(--temperature-font-size);
+  width: auto;
+}
+
+.date{
+  font-size: var(--date-font-size);
+}
+
+.time{
+  font-size: var(--time-font-size);
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.parameter-label.top {
+  border-bottom: 1px solid #fff;
+}
+
+  /*=============== FORECAST ===============*/
+  .forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem auto;
+    width: 48rem;
+}
+
+.items-1 {
+    margin-top: 1rem;
+}
+
+.items-time {
+  font-size: small;
+  margin-bottom: .5rem;
+}
+
+.forecast-temp {
+  padding-bottom: 1.5rem;
+}
+.forecast-icon {
+  width: 40px;
+  margin-bottom: .5rem;
+}
+
+.forecast_item{
+  border-color: 
+    #E6E6E6;
+    background: linear-gradient(
+        to bottom,
+        #FFFFFF 0%,
+        #FFFFFF 65%,                                                                 
+        #E5F6FD 50%,
+        #E5F6FD 100%
+    );
+  border-radius: 1rem;
+  padding: 0 20px 10px ;
+  
+  margin:  auto;  
+}
+.wind,
+.humdity,
+.rain {
+  font-size: var(--data-font-size);
+}
+

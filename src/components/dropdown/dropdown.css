@@ -1,4 +1,16 @@
 .dropdown {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    
 }
+
+select {
+    width: 47.5rem;
+    height: 4rem;
+    padding: 1rem;
+    font-size: var(--search-font-size);
+    border-color: white;
+    border-radius: .6rem;
+    margin: 1rem auto  ;
+}
+
