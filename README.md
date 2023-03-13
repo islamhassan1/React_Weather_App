@@ -1,3 +1,32 @@
+# Weather_App
+
+#### By Islam Hassan
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- React JS
+
+## Description
+
+\_The browser application allows users to shows the locations of he Etteplan offices listed (Tampere,Jyväskylä,Kuopio andEspoo) weather data for the current day.
+-The application displays the following weather information every three hours: Temperature, Wind speed, Humidity (in percent) and Precipitation (in millimeters).
+-The drop-down menu at the top of the interface is used to Select specific city.
+-we use the API from:
+https://openweathermap.org/current
+and
+https://openweathermap.org/forecast5
+-We Developed the application for mobile use and can also be used in tablet and desktop sizes.
+\_
+
+## ScreenShot
+
+![screenshot]()
+
+## Deploy APP
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,6 +97,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # weatherApp
+
 # weather
+
 # weather

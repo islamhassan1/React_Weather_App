@@ -14,7 +14,7 @@ function App() {
     setSelectedCities(cities);
   }
   return (
-    <div className="container">
+    <div>
       <AppBar />
       <Header />
       <CitiesDropdown

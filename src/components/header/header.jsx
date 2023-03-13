@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import "./header.css";
 
-const search = () => {
+const header = () => {
   return (
-    <div className='container'>
-      <div className='header'>Säätutka</div>
+    <div>
+      <div className="header">Säätutka</div>
     </div>
-  )
-}
+  );
+};
 
-export default search
+export default header;

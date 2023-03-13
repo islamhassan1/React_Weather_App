@@ -11,8 +11,6 @@
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
-
-    /*.5rem = 8px | 1rem = 16px ...*/
     --header-font-size: 23pt;
     --search-font-size: 13pt;
     --city-font-size: 19pt;
@@ -27,17 +25,15 @@
 * {
   margin: 0 ;
   padding: 0;
-  
 }
 
 html {
   background-color: var(--body-color-background);
-  
 }
 
   /*=============== WEATHER ===============*/
 .weather {
-  width: 45rem;
+  width: auto;
   border-radius: .5rem;
   background-color: var(--title-color-header);
   margin: auto;
@@ -122,16 +118,15 @@ html {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin: 1rem auto;
-    width: 48rem;
+    margin: 1rem ;
+    width: auto;
 }
 
 .items-1 {
-    margin-top: 1rem;
+    padding: .8rem;
 }
 
 .items-time {
-  font-size: small;
   margin-bottom: .5rem;
 }
 
@@ -153,9 +148,9 @@ html {
         #E5F6FD 50%,
         #E5F6FD 100%
     );
-  border-radius: 1rem;
-  padding: 0 20px 10px ;
-  
+  border-radius: .5rem;
+  /* padding: 0 20px 10px ; */
+  padding: .2rem ;
   margin:  auto;  
 }
 .wind,
@@ -164,3 +159,101 @@ html {
   font-size: var(--data-font-size);
 }
 
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 767px) {
+.forecast_item{
+  padding: 0rem ;
+}
+}
+
+/* For medium devices */ 
+@media screen and (max-width: 600px) {
+  .items-1 {
+    padding: .5rem;
+    font-size: small;
+}
+}
+
+@media screen and (max-width: 530px) {
+  .forecast {
+    margin: .3rem ;
+    width: auto;
+}
+  .forecast_item{
+    padding: .3rem  auto;
+    margin: .1rem auto;
+  }
+  .items-1 {
+    padding: 0.5rem;
+    font-size: small;
+    margin: .1rem auto;
+}
+}
+
+/* For small devices */
+@media screen and (max-width: 491px) {
+  .forecast {
+    margin: .3rem ;
+    width: auto;
+}
+  .forecast_item{
+    padding: .3rem  auto;
+    margin: .1rem auto;
+  }
+  .items-1 {
+    padding: 0.2rem;
+    font-size: small;
+    margin: .1rem auto;
+}
+}
+
+/* For small devices */
+@media screen and (max-width: 442px) {
+  .forecast {
+    margin: .3rem ;
+    width: auto;
+}
+  .forecast_item{
+    padding: .3rem  auto;
+    margin: .1rem auto;
+  }
+  .items-1 {
+    padding: 0.2rem;
+    font-size: small;
+    margin: .1rem auto;
+}
+}
+  
+/* For small devices */
+@media screen and (max-width: 413px) {
+  .forecast {
+    margin: .2rem ;
+    width: auto;
+}
+  .forecast_item{
+    padding: .3rem  auto;
+    margin: .1rem auto;
+  }
+  .items-1 {
+    padding: 0.1rem;
+    font-size: small;
+    margin: .1rem auto;
+}
+}
+/* For small devices */
+@media screen and (max-width: 393px) {
+  .forecast {
+    margin: .2rem ;
+    width: auto;
+}
+  .forecast_item{
+    padding: .3rem  auto;
+    margin: .1rem auto;
+  }
+  .items-1 {
+    padding: 0rem;
+    font-size: small;
+    margin: .4rem auto;
+}
+}

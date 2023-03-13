@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px ;
     background-color: var(--appBar-color-background);
     color: #fff;
+    width: auto;
   }
   .left_side,
   .right_side {
@@ -28,5 +29,19 @@
     margin: -1rem .5rem;
   }
   
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
 
+}
+
+/* For medium devices */ 
+@media screen and (max-width: 576px) {
+
+}
+
+/* For small devices */
+@media screen and (max-width: 320px ) {
+ 
+}
   
