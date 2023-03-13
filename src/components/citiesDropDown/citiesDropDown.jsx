@@ -20,7 +20,7 @@ export function CitiesDropdown(props) {
         onChange={handleCityChange}
         labelId="demo-simple-select-label"
       >
-        <option value="">choose your city</option>
+        <option value="">Kaikki Kaupungit</option>
         {cities.map((city) => (
           <option key={city.id} value={city.name}>
             {city.name}

@@ -4,6 +4,7 @@ import { CitiesDropdown } from "./components/citiesDropDown/citiesDropDown";
 import "./App.css";
 import { CityContainer } from "./components/citiesDropDown/citycontainer";
 import { cities } from "./data/cities";
+import AppBar from "../src/components/appBar/appBar";
 
 function App() {
   const [selectedCities, setSelectedCities] = useState(
@@ -14,6 +15,7 @@ function App() {
   }
   return (
     <div className="container">
+      <AppBar />
       <Header />
       <CitiesDropdown
         setSelectedCities={setSelectedCities}

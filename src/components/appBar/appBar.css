@@ -1,0 +1,32 @@
+.appBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--appBar-color-background);
+    color: #fff;
+  }
+  .left_side,
+  .right_side {
+    display: flex;
+    justify-content: space-between;
+  }
+  .time {
+    font-size: 20px;
+  }
+  
+  .battery {
+    font-size: 16px;
+    -webkit-transform:rotate(90deg);
+    margin: -.2rem .5rem;
+  }
+  
+  .wifi {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: -1rem .5rem;
+  }
+  
+
+  

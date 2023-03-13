@@ -3,6 +3,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
+  --appBar-color-background: #00a5e5 ;
   --title-color-header: #fff;
   --body-color-background: #f8f9fa;
   --border-color: #e6e6e6;
