@@ -7,7 +7,6 @@ export function useWeatherData(cityName) {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      const { lat, lon } = cityName.value;
       const data = await fetchWeatherData(cityName);
       setWeatherData(data);
       setIsWeatherDataLoading(false);
