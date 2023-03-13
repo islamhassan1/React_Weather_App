@@ -22,8 +22,8 @@ export function CitiesDropdown(props) {
       >
         <option value="">Kaikki Kaupungit</option>
         {cities.map((city) => (
-          <option key={city.id} value={city.name}>
-            {city.name}
+          <option key={city.value} value={city.name}>
+            {city.value}
           </option>
         ))}
       </select>
