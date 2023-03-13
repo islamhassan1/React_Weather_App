@@ -8,6 +8,8 @@
   --body-color-background: #f8f9fa;
   --border-color: #e6e6e6;
   --border-color-background: #e5f6fd ;
+  --des-color-font: #70757a ;
+  --city-color-font: #262626 ;
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
@@ -18,7 +20,7 @@
     --date-font-size: 15pt;
     --time-font-size: 13pt;
     --temperature-font-size: 26pt;
-    --data-font-size: 10pt;
+    --data2-font-size: 10pt;
   }
 
   /*=============== BASE ===============*/
@@ -56,7 +58,8 @@ html {
 
 .city {
   font-weight: 600;
-  font-size: 18px;
+  font-size: var(--city-font-size);
+  color: var(--city-color-font);
   line-height: 1;
   margin: 0;
   letter-spacing: 1px;
@@ -64,9 +67,10 @@ html {
 
 .weather-description {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--citystate-font-size);
   line-height: 1;
   margin: 0;
+  color: var(--des-color-font);
 }
 
 .weather_icon {
@@ -75,20 +79,24 @@ html {
 }
 .weather-icon {
   width: 40px;
+  margin-right: 1rem;
 }
 
 .temperature {
   font-weight: 330;
   font-size: var(--temperature-font-size);
+  color: var(--city-color-font);
   width: auto;
 }
 
 .date{
   font-size: var(--date-font-size);
+  color: var(--city-color-font);
 }
 
 .time{
   font-size: var(--time-font-size);
+  color: var(--des-color-font);
 }
 
 .parameter-row {
@@ -111,6 +119,10 @@ html {
 .parameter-label.top {
   border-bottom: 1px solid #fff;
 }
+.details {
+  font-size: var(--time-font-size);
+  color: var(--date2-color-font);
+}
 
   /*=============== FORECAST ===============*/
   .forecast {
@@ -123,19 +135,23 @@ html {
 }
 
 .items-1 {
-    padding: .8rem;
+    padding: .5rem;
 }
 
 .items-time {
   margin-bottom: .5rem;
+  font-size: var(--time-font-size);
+  color: var(--des-color-font);
 }
 
 .forecast-temp {
   padding-bottom: 1.5rem;
+  font-size: var(--date-font-size);
+  color: var(--des-color-font);
 }
 .forecast-icon {
   width: 40px;
-  margin-bottom: .5rem;
+  margin-bottom: .4rem;
 }
 
 .forecast_item{
@@ -144,14 +160,16 @@ html {
     background: linear-gradient(
         to bottom,
         #FFFFFF 0%,
-        #FFFFFF 65%,                                                                 
+        #FFFFFF 60%,                                                                 
         #E5F6FD 50%,
         #E5F6FD 100%
     );
   border-radius: .5rem;
   /* padding: 0 20px 10px ; */
-  padding: .2rem ;
+  padding: .5rem ;
   margin:  auto;  
+  font-size: var(--date-font-size);
+  color: var(--des-color-font);
 }
 .wind,
 .humdity,
@@ -161,9 +179,29 @@ html {
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
+@media screen and (max-width: 816px) {
+  .forecast_item{
+    padding: 0rem ;
+  }
+  }
+/* For large devices */
 @media screen and (max-width: 767px) {
 .forecast_item{
   padding: 0rem ;
+}
+}
+/* For large devices */
+@media screen and (max-width: 705px) {
+  .items-1 {
+    padding: .5rem;
+    font-size: small;
+}
+  }
+/* For medium devices */ 
+@media screen and (max-width: 696px) {
+  .items-1 {
+    padding: .5rem;
+    font-size: small;
 }
 }
 
@@ -241,6 +279,23 @@ html {
     margin: .1rem auto;
 }
 }
+/* For small devices */
+@media screen and (max-width: 415px) {
+  .forecast {
+    margin: .2rem ;
+    width: auto;
+}
+  .forecast_item{
+    padding: .3rem  auto;
+    margin: .1rem auto;
+  }
+  .items-1 {
+    padding: 0.1rem;
+    font-size: small;
+    margin: .1rem auto;
+}
+}
+
 /* For small devices */
 @media screen and (max-width: 393px) {
   .forecast {
