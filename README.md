@@ -23,7 +23,7 @@ https://openweathermap.org/forecast5
 
 ## ScreenShot
 
-![screenshot]()
+![screenshot](https://github.com/islamhassan1/React_Weather_App/blob/main/screencapture-WeatherApp.png)
 
 ## Deploy APP
 
